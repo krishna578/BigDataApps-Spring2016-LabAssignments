@@ -1,0 +1,10 @@
+ install.packages('mclust')
+ library(mclust)
+ file=read.csv("E:/disease.csv")
+ file.test=file
+ file.test$Disease <- NULL
+ x= file.test[,1]
+ y= file.test[,2]
+ plot(x,y)
+ model <-Mclust(file.test)
+ plot(model,file.test)

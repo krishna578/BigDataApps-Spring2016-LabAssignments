@@ -1,0 +1,5 @@
+ file=read.csv("E:/disease.csv")
+ file.test=file
+ file.test$Disease <- NULL
+ hc<-hclust(dist(file.test),method="average")
+ plot(hc,hang=-1,labels=file$Disease)

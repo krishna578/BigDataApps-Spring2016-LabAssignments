@@ -1,0 +1,7 @@
+ install.packages('flexclust')
+ library(flexclust)
+ data(Iris) 
+ testIris=Iris
+ testIris$Species <- NULL
+ kmedians <- kcca(testIris, k=4, family=kccaFamily("kmedians"), save.data=TRUE)
+ plot(kmedians)

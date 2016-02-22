@@ -1,0 +1,7 @@
+ file=read.csv("E:/disease.csv")
+ file.test=file
+ file.test$Disease <- NULL
+ km <- kmeans(file.test,4,20)
+ plot(km)
+ plot(file,col=km$cluster)
+ 

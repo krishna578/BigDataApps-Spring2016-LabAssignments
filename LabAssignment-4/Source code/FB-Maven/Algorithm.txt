@@ -1,0 +1,10 @@
+The Algorithm is implemented by using Mapper and Reducer
+Let us assume input file as key value pairs as (Person, Friends)
+
+Mapper
+The Mapper class takes above input and emits this Key Value Pair (Person1Person2, Friends of Person1+Friends of Person2)
+
+Reducer
+The Reducer takes above input and and converts the Key value Pair which is Output of our program (Person1,Person2, Common Friends)
+
+
